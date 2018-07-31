@@ -56,7 +56,7 @@ pipeline {
       }
       steps {
         echo "Creating Projects"
-        sh "./Infrastructure/bin/setup_projects.sh ${GUID} ${USER}"
+        // sh "./Infrastructure/bin/setup_projects.sh ${GUID} ${USER}"
       }
     }
     stage("Setup Infrastructure") {
