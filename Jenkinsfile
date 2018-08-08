@@ -68,7 +68,7 @@ pipeline {
         stage("Setup Nexus") {
           steps {
             echo "Setting up Nexus"
-            sh "./Infrastructure/bin/setup_nexus.sh ${GUID}"
+            // sh "./Infrastructure/bin/setup_nexus.sh ${GUID}"
           }
         }
         stage("Setup Sonarqube") {
