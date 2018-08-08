@@ -73,8 +73,8 @@ pipeline {
         }
         stage("Setup Sonarqube") {
           steps {
-            echo "Setting up Sonarqube"
-            sh "./Infrastructure/bin/setup_sonar.sh ${GUID}"
+            echo "don't bother with Setting up Sonarqube"
+            // sh "./Infrastructure/bin/setup_sonar.sh ${GUID}"
           }
         }
         stage("Setup Jenkins") {
